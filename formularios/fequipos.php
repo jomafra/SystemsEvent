@@ -19,7 +19,8 @@
                     $resultado = mysqli_query($coneccion,$consultas);                
                     if(!$resultado){echo"--ERROR-- al Ejecutar la consulta";}
                     while($list_cat= mysqli_fetch_array($resultado)){
-                    echo '<option value='.$list_cat['id_categoria'].'>'.$list_cat['categoria'].'</option>';} 
+                    echo '<option value='.$list_cat['id_categoria'].'>'.$list_cat['categoria'].'</option>';
+                    } 
                     mysqli_close($coneccion);
                 ?>
             </select>

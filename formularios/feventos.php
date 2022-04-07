@@ -67,21 +67,6 @@ include "registros/conec.php";
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--
 <div  class='emergente'>
     <form action="registros/reventos.php" method='post' class='formulario'>
