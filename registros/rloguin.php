@@ -1,5 +1,3 @@
-rlogin
-
 <?php
 include "conec.php";
 

@@ -5,7 +5,7 @@ $varsesion = $_SESSION['usuario'];
 $perfil    = $_SESSION['perfil'];
 
 if( ($varsesion == '')or($perfil !=3) ){
-    echo '<h3>Usted no tiene permiso para usar esta aplicación</h3>';
+    echo '<h3>Usted no tiene permiso para ingresar equipos</h3>';
     header("refresh: 2; url= eventos.php");
     die();
 }

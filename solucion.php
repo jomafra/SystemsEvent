@@ -6,18 +6,14 @@ $perfil     = $_SESSION['perfil'];
 
 if(($varsesion =='') or ($perfil != 3)){
     echo '<h3>Usted no tiene permiso para usar esta aplicación</h3>';
-    //header(' refresh: 2; url= index.php');
+    header(' refresh: 2; url= eventos.php');
     die();
 }
+require_once("layout/cabecerahtml.php");
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Soluciones</title>
-    <link href="estilos/estilos.css" rel="stylesheet">
-</head>
+
 <body>
+    
     <div class="padre">
       <div class='tarjetero' >
               <a  class='tarjeta' href='validar.php'>

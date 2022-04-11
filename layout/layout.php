@@ -44,7 +44,7 @@ session_start();
 
             </div>
             <div class="col-lg-7 mt-3">
-                <h3 class="text-white text-center">CASOS ABIERTOS</h3>
+                <h3 class="text-white text-center">CASOS PENDIENTES</h3>
                 <?php require_once("principal.php"); ?>
             </div>
             <div class="col-lg-1">

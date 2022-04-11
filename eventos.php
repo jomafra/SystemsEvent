@@ -9,7 +9,6 @@ $perfil       = $_SESSION['perfil'];
         header("refresh: 2; url= usuarios.php");
         die();
     }
-
     require_once("layout/cabecerahtml.php");
 ?>
 <body>
@@ -49,7 +48,7 @@ $perfil       = $_SESSION['perfil'];
 <body>
     <div class="lado-der">   
     <?php
-        if ($perfil == 3){
+        /*if ($perfil == 3){
             echo "<div class='tarjetero' >
                     <a  class='tarjeta' href='validar.php'>
                         <h4 >Bandeja Principal</h4>
@@ -63,7 +62,7 @@ $perfil       = $_SESSION['perfil'];
                     </a>
                 </div>";
         
-        }
+        }*/
 ?>
             <div class="padre">
                 <div class="resultados">

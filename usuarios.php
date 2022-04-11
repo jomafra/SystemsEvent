@@ -5,9 +5,14 @@ $varsesion = $_SESSION['usuario'];
 $perfil    = $_SESSION['perfil'];
 
 require_once("layout/cabecerahtml.php");
+?>
+<body>
+    
+<header>
+<?php 
 require_once("layout/header.php");
 ?>
-
+</header>
     <div class="container"> 
             <?php if ($perfil == 3){ 
                     echo"<div class='row'>
@@ -21,9 +26,8 @@ require_once("layout/header.php");
             <div class="col-lg-9 mt-3">
                 <div class="row">
                 <?php
-                    require_once("formularios/fusuarios.php")
-                ?>
-                
+                    require_once("formularios/fusuarios.php");
+                ?>                
                 </div>
             </div>
         </div>
@@ -47,7 +51,7 @@ require_once("layout/header.php");
         <div class="row">
             <div  class="col-lg-12">
             <?php
-                    require_once("formularios/fusuarios.php")
+                   // require_once("formularios/fusuarios.php")
                 ?>
             </div>
         </div>
