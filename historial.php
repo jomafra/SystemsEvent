@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php
 session_start();
 error_reporting(0);
@@ -10,12 +12,9 @@ if(($perfil != 3) or ($varsesion =='')){
 }
 require_once("layout/cabecerahtml.php")
 ?>
-
-
 <body>
-<header>
-    <?php require_once ("layout/header.php"); ?>
-</header>
+<?php require_once ("layout/header.php"); ?>
+
     <div class="container"> 
         <div class="row">
             <div class="col-lg-3 mt-2">

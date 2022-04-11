@@ -1,3 +1,4 @@
+<header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container">
     <a class="navbar-brand" href="../validar.php">System's Event</a>
@@ -28,3 +29,4 @@
     </div>
   </div>
 </nav>
+</header>

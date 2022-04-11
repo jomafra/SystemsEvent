@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php
 session_start();
 error_reporting(0);
@@ -8,13 +10,10 @@ if(($varsesion =='') or ($perfil !=3)){
     echo '<h3>Usted no tiene permiso para usar esta aplicación</h3>';
     header(' refresh: 2; url= index.php');
 }
-
 require_once("layout/cabecerahtml.php");
 ?>
 <body>
-<header>
     <?php require_once ("layout/header.php"); ?>
-</header>
 
     <div class="container">
         <div class='row' >
@@ -30,11 +29,7 @@ require_once("layout/cabecerahtml.php");
                     require_once("formularios/fcategorias.php");
                 ?>
             </div>
-
-        </div>
-    
-        
+        </div>       
     </div>
-
 </body>
 </html>

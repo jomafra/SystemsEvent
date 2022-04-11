@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <?php
 session_start();
 error_reporting(0);
@@ -11,15 +13,12 @@ if(($varsesion =='') or ($perfil != 3)){
 }
 require_once("layout/cabecerahtml.php");
 ?>
-
 <body>
-    
+<?php
+require_once("layout/header.php");
+?>  
     <div class="padre">
-      <div class='tarjetero' >
-              <a  class='tarjeta' href='validar.php'>
-                  <h4 >Bandeja Principal</h4>
-              </a>
-      </div>
+      
         <div class="resultados">
             <?php
                 require_once("formularios/fsolucion.php");
