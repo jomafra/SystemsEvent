@@ -1,7 +1,7 @@
-?php
+<?php
 
 //$coneccion=mysqli_connect("localhost","root","","soseventbd");
-$coneccion = mysqli_connect ("MYSQL5047.site4now.net","a827ac_soseven","Mibd@001","db_a827ac_soseven");
+$coneccion = mysqli_connect ("sql10.freesqldatabase.com","sql10485124","ZDS7x7KlRv","sql10485124");
 if(!$coneccion){
     echo"-Algo pasoó- no se pudo conectar a base de datos";
 }
