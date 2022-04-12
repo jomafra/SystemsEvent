@@ -20,7 +20,10 @@ require_once("layout/cabecerahtml.php");
             <div class="col-lg-3 mt-2">
                     <?php require_once("layout/ladoizq.php"); ?>                
             </div>
-            <div class="col-lg-9 mt-3">
+            <div class="col-lg-1">
+
+            </div>
+            <div class="col-lg-8 mt-3">
                 <div class="row">
                     <?php require_once("formularios/fequipos.php"); ?>
                 </div>
