@@ -15,7 +15,7 @@
     <style>
         /* Fondo de pagina */
         body {
-            background-color:black;
+            background-color:gray;
             background-image: url();
             background-position:top;
             background-size:100% 100%;

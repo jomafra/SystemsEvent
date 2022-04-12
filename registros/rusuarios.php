@@ -1,5 +1,6 @@
 <?php
 include "conec.php";
+$varsesion = $_SESSION['usuario'];
 
 $nombres      = $_POST["nombres"];
 $apellidos    = $_POST["apellidos"];
@@ -20,9 +21,14 @@ mysqli_close($coneccion);
 
 if(!$resultado){
     echo"<h3>ERROR al intentar registrarse</h3>";
-    echo" <h2> <a  href='../usuarios.php'>--VOLVER a Intentarlo--</a></h2>";
+    echo" <h2> <a  href='usuarios.php'>--VOLVER a Intentarlo--</a></h2>";
 }else{
     echo '<h2>Sus Datos se han Guardado Exitosamente</h2>';
-    header("refresh: 1; url= ../index.php");
+    if ($varsesion ==''){
+        header("refresh: 1; url= index.php");
+    }else{    
+        header("refresh: 1; url= dashboard.php");
+    }
+    
 }
 ?>

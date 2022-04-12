@@ -8,7 +8,6 @@ $consultas ="SELECT email, contrasena, id_perfil FROM usuarios  WHERE ( email ='
 
 $resultado = mysqli_query($coneccion,$consultas);
 mysqli_close($coneccion);
-// if(!$resultado){ 
 
 if($resultado){ 
     $mi_usuario = mysqli_fetch_assoc($resultado);  
@@ -17,7 +16,7 @@ if($resultado){
         $_SESSION['usuario']=$email;
         $_SESSION['perfil']=$mi_usuario['id_perfil'];
         echo "<h2>Bienvenido a System's Event </h2>";
-        header("refresh: 2; url= ../validar.php");
+        header("refresh: 2; url= dashboard.php");
     }else{
         echo"<h2>Su Contraseña No Coincide</h2>";
         echo" <h2> <a href='../index.php'>Intentar Nuevamente</a></h2>";

@@ -1,4 +1,7 @@
 <div class="">
+    <a class="btn btn-success form-control mt-2" href="dashboard.php">
+               <h4 class="enlace">DASHBOARD</h4>
+    </a> 
     <a class="btn btn-warning form-control mt-2" href="eventos.php">
                <h4 class="enlace">NUEVO EVENTO</h4>
     </a> 
