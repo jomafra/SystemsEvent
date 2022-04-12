@@ -123,7 +123,7 @@ include "registros/conec.php";
                 </div>
             </div>
             <div class="row">
-                <input type="submit" class="form-control btn btn-success mt-2" value="REGISTRAR">
+                <input type="submit" class="form-control btn btn-success mt-2" placeholder="REGISTRAR">
             </div>
            
     </form>
