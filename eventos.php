@@ -24,14 +24,14 @@ $perfil       = $_SESSION['perfil'];
                         require_once("layout/ladoizq.php");
                         echo'</div>';
                     }
-                ?>                           
-            <div class="col-lg-9 mt-3">
-                <div class="row">
-                <?php
+                ?> 
+                <div class="col-lg-1">
+                </div>                        
+                <div class="col-lg-8 mt-2">
+                    <?php
                         require_once("formularios/feventos.php");
                     ?>
                 </div>
-            </div>
         </div>
     </div> 
 </body>

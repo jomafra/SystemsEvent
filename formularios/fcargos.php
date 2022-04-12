@@ -1,15 +1,11 @@
 <?php
 include "registros/conec.php";
 
-
 $consultas ="SELECT cargo FROM cargos ORDER BY cargo";
-
 $resultado = mysqli_query($coneccion,$consultas);
-mysqli_close($coneccion); 
-//---------------------------------------------------------------
+mysqli_close($coneccion);
 ?>
-
-   
+  
 <div  class="emergente">   
     <form action="registros/rcargos.php" method="post" class="formulario">
 
