@@ -16,7 +16,7 @@ if($resultado){
         $_SESSION['usuario']=$email;
         $_SESSION['perfil']=$mi_usuario['id_perfil'];
         echo "<h2>Bienvenido a System's Event </h2>";
-        header("refresh: 2; url= dashboard.php");
+        header("refresh: 2; url= ../dashboard.php");
     }else{
         echo"<h2>Su Contraseña No Coincide</h2>";
         echo" <h2> <a href='../index.php'>Intentar Nuevamente</a></h2>";
