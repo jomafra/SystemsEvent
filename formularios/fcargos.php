@@ -1,73 +1,49 @@
 <?php
+
 include "registros/conec.php";
-
 $consultas ="SELECT cargo FROM cargos ORDER BY cargo";
+
 $resultado = mysqli_query($coneccion,$consultas);
-mysqli_close($coneccion);
+mysqli_close($coneccion); 
 ?>
-  
-<div  class="emergente">   
-    <form action="registros/rcargos.php" method="post" class="formulario">
 
-                <div class="titulo-form">
-                    Ingreso de Cargos 
-                </div>
-                
-               
 
-                <div class="row">
-                    <div class="medio1">
-                      Nuevo Cargo
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+        
+            <form action="registros/rcargos.php" method="post" class="">
 
-                    </div>
-                    <div class="medio2">
-                        <input type="text" name="cargo" placeholder=" Nueva Cargo">
-                    </div>
-                </div> 
-                                <div class="row">
-                        <div class="medio1">
-                            
-                        </div>
+                <h4 class="text-white text-center ">
+                        Ingreso de Cargos 
+                </h4>
+                <input class=" text-white form-control mt-3" type="text" required name="cargo" placeholder="Nuevo Cargo">
 
-                        <div class="medio2">
-                            
-                        </div>
-                    </div>
-                <div class="row">
-                        <div class="medio1">
-                            Cargos Existentes
-                        </div>
-
-                        <div class="medio2">
-                            <input type="submit" class=" botones" value="Agregar">
-                        </div>
-                    </div>
-
-                <div class="">
-                    <div class="medio1">
-                        
-                            <?php  
+                <input type="submit" class= "btn btn-success form-control mt-2" value="Agregar Cargo">
+            
+            </form>
+        </div>
+                                                         
+        <div class="col-lg-6">
+            <h4 class="text-white text-center">Cargos existentes</h4>
+            
+        <?php
 //---------------Listado de cargos existentes---------------   
 if(!$resultado){
     echo"--Error-- No se pudo consultar la tabla";
 
 }else{
-    while($list_car= mysqli_fetch_array($resultado)){
-         echo"<div class='rowb'>
-                <div class='medio1'>
-                    $list_car[cargo]
-                </div>
-                    
-                </div>";
+    while($list_car= mysqli_fetch_assoc($resultado)){
+         echo"<div class= 'btn btn-primary form-control mt-2'>
+                                $list_car[cargo]   
+            </div>";
         }
 } 
-//--------------------------------------------------------------
-    ?>                  </div>
-                        <div class="medio2">
-
-                        </div>
-                    </div>  
-                    
-           </form>
+/*--------------------------------------------------------*/
+        ?> 
+                
+        
         </div>
-
+    </div>
+    
+</div>

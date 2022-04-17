@@ -6,45 +6,24 @@ $resultado = mysqli_query($coneccion,$consultas);
 mysqli_close($coneccion); 
 //-------------------------------------------------------------------
 ?>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-6">
         
-       <div  class="emergente">     
+            <form action="registros/rcriticidad.php" method="post" class="">
 
-            <form action="registros/rcriticidad.php" method="post" class="formulario">
+                <h4 class="text-white text-center ">
+                        Nuevo Nivel de Criticidad
+                </h4>
+                <input class=" text-white form-control mt-3" type="text" required name="cargo" placeholder="Nuevo nivel">
 
-
-
-                <div class="titulo-form">
-                   Niveles de Criticidad
-                </div>
-
-                
-
-                <div class="row">
-                    <div class="medio1">
-                        Nuevo Nivel
-                    </div>
-                    <div class="medio2">
-                        <input type="text" name="nivel" placeholder="Nuevo Nivel">
-                    </div>
-                </div>
-                  <div class="row ">
-                    <div class="medio1">
-                        
-                    </div>
-                    <div class="medio2">
-                       
-                    </div>
-                </div>
-                 <div class="row ">
-                    <div class="medio1">
-                        Niveles Existentes
-                    </div>
-                    <div class="medio2">
-                        <input type="submit" class=" botones" value="Agregar">
-                    </div>
-                </div>
-                <div class="">
-                    <div class="medio1">
+                <input type="submit" class= "btn btn-success form-control mt-2" value="Agregar Nivel">
+            
+            </form>
+        </div>
+                                                         
+        <div class="col-lg-6">
+            <h4 class="text-white text-center">Niveles Existentes</h4>
     <?php  
 //--------------------------------------------
 if(!$resultado){
@@ -52,27 +31,14 @@ if(!$resultado){
 
 }else{
     while($list_crit= mysqli_fetch_array($resultado)){
-       echo"<div class='row'>
-                    <div class='medio1'>
-                     $list_crit[criticidad]
-                    </div>
-                    
-                </div>";
+       echo"<div class= 'btn btn-primary form-control mt-2'>
+                                $list_crit[criticidad]   
+            </div>";
     }
 }
-//-------------------------------
+//-----------------------------------------
 ?>                    
-                    </div>
-                    <div class="medio2">
-                       
-                    </div>
-                </div>
-                
-
-               
-
-
-            </form>
-
-        </div>
-               
+      </div>
+    </div>
+    
+</div>

@@ -2,7 +2,7 @@
 <html lang="en">
 <?php
 session_start();
-error_reporting(0);
+//error_reporting(0);
 $varsesion = $_SESSION['usuario'];
 $perfil     = $_SESSION['perfil'];
 
