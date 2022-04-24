@@ -21,11 +21,12 @@ require_once("layout/cabecerahtml.php")
                 <?php 
                     require_once("layout/ladoizq.php");
                 ?>
-                <a  class='btn btn-primary form-control mt-3' href='consultas/chistorialpdf.php'>GENERAR PDF</a>
             </div>
-            <div class="col-lg-9 mt-3">
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-8 mt-2">
             <h3 class="text-white text-center">HISTORIAL DE EVENTOS</h3>
-                <?php require_once("consultas/chistorial.php"); ?>
+                <?php require_once("formularios/filtro_hist.php"); ?>
             </div>
         </div>
     </div> 
