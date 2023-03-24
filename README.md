@@ -1,4 +1,4 @@
-SystemsEvent
+# SystemsEvent 
 Es un sofware Open Source.
 éste es un prototipo de un modulo de captura y atencion remota de eventos de sistemas
 está basado en php puro , html y css, y no se ha utilizado ningun framework aparte de bootstrap.
